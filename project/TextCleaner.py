@@ -2,7 +2,10 @@ from sklearn.base import BaseEstimator, TransformerMixin
 import re
 
 class TextCleaner(BaseEstimator, TransformerMixin):
-    ''' text cleaning : input can be str, list of sring, or pandas Series '''
+    ''' text cleaning : 
+        input can be str, list of sring, or pandas Series 
+        a minimal version, repacing only '\n' with ' '
+    '''
 
     def __init__(self):
         print('')
